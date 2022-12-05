@@ -17,20 +17,20 @@ const addNumber = document.querySelector('button[data-action="increment"]');
 const subtractNumber = document.querySelector('button[data-action="decrement"]');
 
 const value = document.querySelector('#value')
-let newValue = Number(value.textContent = 0);
 
 addNumber.addEventListener('click', plusNumber);
 subtractNumber.addEventListener('click', minusNumber)
 
+let result = 0;
+
+console.log(value.textContent)
 function plusNumber(){
-    Number(value.textContent += 1);
-    // newValue = newValue + 1;
-    // console.log('hello')
-   
+   result += 1;
+   value.textContent = result;    
 }
+
 function minusNumber(){
     value.textContent -= 1;
-    // newValue -= 1;
-    // console.log('hello22')
+   
 }
 

@@ -28,15 +28,18 @@ function formSubmit(event) {
     event.preventDefault();    
 
     const formData = new FormData(event.currentTarget);
-    console.log(formData);
+    // console.log(formData);
 
     const formElem = event.currentTarget.elements;
     const email = formElem.email.value;
-    console.log(email);
+    // console.log(email);
     const password = formElem.password.value;
-    console.log(password);
+    // console.log(password);
     if (email === "" || password === "") {
         alert("Всі поля повинні бути заповнені!!!")
+    } else {
+        console.log(`{email:${email}, Password:${password}}`)
     }
+    
     form.reset()
 }

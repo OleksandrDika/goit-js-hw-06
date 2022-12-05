@@ -25,6 +25,7 @@
 // }
 
 const inputName = document.querySelector("#validation-input");
+console.log(inputName)
 
 inputName.addEventListener('input', inputChange);
 
@@ -32,7 +33,7 @@ function inputChange(event){
    
     let length = inputName.value.length
     console.log(length)
-    if (length !== 6) {
+    if (length !== Number(inputName.dataset.length)) {
         
         inputName.classList.add("invalid")
     } else {

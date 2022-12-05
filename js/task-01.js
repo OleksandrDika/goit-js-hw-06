@@ -19,21 +19,21 @@
 const list = document.querySelector("#categories")
 const listItem = [...list.children]
 
-let TotalCategories = 0;
+let totalCategories = 0;
 for (let index = 0; index < listItem.length; index++) {
-    TotalCategories =TotalCategories + 1;      
+    totalCategories =totalCategories + 1;      
 }
 
-console.log(`Number of categories: ${TotalCategories}`);
+console.log(`Number of categories: ${totalCategories}`);
 
 const item = document.querySelectorAll('.item');
 for (let index = 0; index < item.length; index++) {
      const Category = item[index].firstElementChild.textContent
 
     console.log(`Category: ${Category}`)
-    const Elements = item[index].lastElementChild 
+    const elements = item[index].lastElementChild 
     
-    const elem = [...Elements.children]
+    const elem = [...elements.children]
     console.log(`Elements: ${elem.length}`)
 
 }
