@@ -27,10 +27,19 @@ console.log(viewColor);
 
 btnChange.addEventListener("click", getRandomHexColor)
 
-
 function getRandomHexColor() {
-  document.body.style.backgroundColor = `#${Math.floor(Math.random() * 16777215)
+  viewColor.textContent = `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`
+    document.body.style.backgroundColor = viewColor.textContent;
+}
+
+
+
+
+// function getRandomHexColor() {
+//   document.body.style.backgroundColor = `#${Math.floor(Math.random() * 16777215)
+//     .toString(16)
+//     .padStart(6, 0)}`
   
-  }
+// }

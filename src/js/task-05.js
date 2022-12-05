@@ -15,9 +15,7 @@ console.log(enterNameView)
 
 
 enterName.addEventListener("input", (event) => {
-    enterNameView.textContent = event.currentTarget.value;
+  return event.currentTarget.value ? enterNameView.textContent = event.currentTarget.value : enterNameView.textContent ='Anonymous';
+    
   });
 
-if (!enterName.textContent) {
-    enterNameView.textContent ='Anonymous';    
-}
