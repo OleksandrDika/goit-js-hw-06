@@ -38,7 +38,7 @@ function formSubmit(event) {
     if (email === "" || password === "") {
         alert("Всі поля повинні бути заповнені!!!")
     } else {
-        console.log(`{email:${email}, Password:${password}}`)
+        console.log({email, password})
     }
     
     form.reset()
